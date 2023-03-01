@@ -75,7 +75,7 @@ input[type=submit]:hover {
 
 .card:hover {
   cursor: pointer;
-  transform: scale(1.04); 
+  transform: scale(1.04);
   transition-duration: 1s;
 }
 
@@ -124,5 +124,18 @@ img {
     height: 650px;
     justify-content: center;
     max-width: none;
+  }
+
+  input[type=text] {
+    width: 50%;
+  }
+
+  input[type=submit] {
+    width: 10%;
+  }
+
+  input[type=submit]:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
   }
 }
