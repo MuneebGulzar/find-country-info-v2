@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Country from './Country';
 import axios from 'axios';
-
+import Swal from 'sweetalert2';
 
 
 const Countries = (props) => {
@@ -49,7 +49,7 @@ const Countries = (props) => {
 
                     setCountries((countries) => [...countries, obj])
                     setId(id + 1)
-                    
+
                     console.log(countries)
 
                 } else {
@@ -84,6 +84,12 @@ const Countries = (props) => {
                 }
             })
                 .catch(error => {
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Not found!',
+                        icon: 'error',
+                        confirmButtonText: 'Search again'
+                    })
                     console.log("Errorrrr: " + error)
                 })
         }
@@ -100,7 +106,7 @@ const Countries = (props) => {
     return (
         <>
 
-            <Country countries={countries} cardID={id}/>
+            <Country countries={countries} cardID={id} />
 
         </>
     )

@@ -25,7 +25,7 @@ const Country = (props) => {
                                     </div>
                                     <div className="stats">
                                         <p><IoHome size={28} /> {c.capital}</p>
-                                        <p><IoIosPeople size={28} /> {c.population > 1000000 ? (Math.round(c.population) / 1000000).toFixed(2) + 'M' : c.population} people M</p>
+                                        <p><IoIosPeople size={28} /> {c.population > 1000000 ? (Math.round(c.population) / 1000000).toFixed(2) + 'M' : c.population} people</p>
                                         <p><FaHeadSideCough size={28} /> {c.languages}</p>
                                         <p><AiFillDollarCircle size={28} /> {c.currency}</p>
                                     </div>
