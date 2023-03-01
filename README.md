@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# DEMO
+## DEMO
 [Let`s go](https://muneebgulzar.github.io/find-country-info-v2/)
 
 ## Available Scripts
