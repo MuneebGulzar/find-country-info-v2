@@ -24,8 +24,8 @@ form {
   gap: 1rem;
   width: 85vw;
   height: 15vh;
-  position: sticky;
-  top: 1rem;
+  position: fixed;
+  top: 1px;
   margin-block: 2rem;
 }
 
@@ -58,7 +58,7 @@ input[type=submit]:hover {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
-  margin-bottom: 10vh;
+  margin-top: 20vh;
 }
 
 .card {
@@ -134,6 +134,7 @@ a:hover{
 @media screen and (min-width: 769px) {
   .card-container {
     flex-direction: row;
+    margin-top: 20vh;
   }
 
   .card {
